@@ -5,4 +5,4 @@ def page_price_predictor_body():
     st.write("### 💰 Price Predictor")
     st.write("---")
 
-    st.info("✅ Price Predictor page is working!")
+    st.info("✅ Price Predictor page is working")

@@ -8,3 +8,13 @@ node_modules/
 .github/
 cloudinary_python.txt
 kaggle.json
+
+# Data files - don't commit to GitHub
+inputs/datasets/raw/*
+inputs/datasets/collection/*
+outputs/ml_pipeline/v1/*
+
+# Keep folder structure but ignore contents
+!inputs/datasets/raw/.gitkeep
+!inputs/datasets/collection/.gitkeep
+!outputs/ml_pipeline/v1/.gitkeep
