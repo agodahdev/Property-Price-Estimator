@@ -1,5 +1,5 @@
 import streamlit as st
-from app_pages.mutipage import MultiPage
+from app_pages.multipage import MultiPage
 
 from app_pages import page_summary
 from app_pages import page_property_analysis
