@@ -3,19 +3,17 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
+from src.data_manager import load_small_dataset
 
 # Display property analysis page
 def page_property_analysis_body():
     st.write("### Property Data Analysis")
     st.write("---")
 
-    try:
-        df = pd.read_csv("inputs/datasets/collection/uk_housing_clean.csv")
-        
-        # Sample the datat to prevent browser overload
-        df = df.sample(n=5000, random_state=42)
-        st.info(f"Analyzing sample of {len(df):,} properties")
-
+    # Load small dataset
+    df = load_small_dataset()
+    if df is not None:
+        st.info(f"Analyzing {len(df):,} properties")
 
         # Property Type Distribution
         st.write("#### Property Type Distribution")
@@ -41,5 +39,5 @@ def page_property_analysis_body():
         county_prices = df.groupby('County')['Price'].mean().sort_values(ascending=False).head(10)
         st.bar_chart(county_prices)
 
-    except Exception as e:
-        st.error(f"Error loading data: {e}") 
+    else:
+        st.error(f"Error loading data") 
