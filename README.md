@@ -25,3 +25,25 @@ Build a smart sytem that can guess how much should cost, helping estate agents a
 **What it contains:** Records of every house sale in England and Wales since 1995
 **How much"** 20,000 house sales (made smaller to the app runs fast)
 **What information::** 11 different details about each house including price and location
+
+### What Each Column Means:
+- **Transaction ID:** Unique number for each house sale
+- **Price:** How much the house sold for in pounds
+- **Date:** When the house was sold
+- **Property Type:** D=Detached, S=Semi-detached, T=Terraced, F=Flat
+- **Old/New:** Y=Newly built, N=Older house
+- **Duration:** F=You own it forever, L=You lease it for years
+- **Town/City:** Which town house is in
+- **District:** Local area
+- **County:** Which county
+- **Category:** Type classification
+- **Status:** Data record information
+
+## The Three Big Questions
+
+### Question 1: Are London Houses Way More Expensive?
+**What we think:** London houses cost much more than houses anywhere else in the UK.
+
+**How we test it:** Compare average London house prices with everywhere else.
+
+**What counts as success:** London houses cost at least 50% more.
