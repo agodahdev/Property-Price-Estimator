@@ -32,7 +32,7 @@ def page_price_predictor_body():
 
             # User selects property tenure (ownership type)
             duration_mapping = {'F': 'Freehold', 'L': 'Leasehold'}
-            duraration_options - [duration_mapping.get(d,d) for d in df['Duration'].unique()]
+            duraration_options = [duration_mapping.get(d,d) for d in df['Duration'].unique()]
 
             duration_display = st.selectbox("Property Tenure",
                                             options=duraration_options,
@@ -43,8 +43,8 @@ def page_price_predictor_body():
         # Information box about tenure types 
         st.info("""
         **Tenure Types Explained:**
-        - **Freehold**: You own the property and land permanently (typical for houses)
-        - **Leasehold**: You own the property for a fixed period, usually 99-999 years
+        - **Freehold**: You own the property and land permanently (typical for houses).
+        - **Leasehold**: You own the property for a fixed period, usually 99-999 years.
         """)
 
         # When user clicks the predict button
