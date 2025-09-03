@@ -225,3 +225,22 @@ We tested different settings to make it work best:
 - **Consistency:** Set random seed for same results every time
 
 **Final Setup:** 50 trees with other settings optimized for best performance.
+
+## What We Found Out
+
+### Our Three Questions - The Results
+
+**Question 1: CORRECT**
+London houses do cost 150-200% more than other UK areas. Big difference confirmed.
+
+**Question 2: CORRECT** 
+Detached houses are definitely the most expensive, costing 40-60% more than terraced houses.
+
+**Question 3: PARTLY CORRECT**
+New houses sometimes cost more, but it depends on location. Usually 15-25% more in popular areas.
+
+### Business Value
+- **Estate Agents:** Give clients data-backed price estimates
+- **Investors:** Find good deals and market opportunities  
+- **Buyers:** Make smarter decisions with real market data
+- **Everyone:** Better understanding of UK house market
