@@ -181,3 +181,21 @@ _Run all the cells to download data_
 4. **Start the app:**
 streamlit run app.py
 
+## How We Get and Process Data:
+
+### Automatic Data Sytem
+The project downloads data by itself using Kaggle:
+
+1.**Download**: Gets UK house price data automatically
+1. **Download:** Gets UK house price data automatically
+2. **Extract:** Unzips files and loads data
+3. **Clean:** Fixes any problems with the data
+4. **Make Smaller:** Creates faster version for the app
+5. **Save:** Puts data in organized folders
+
+### Data Processing Steps
+- **Collection:** Downloads from official government source
+- **Cleaning:** Fixes missing information
+- **Engineering:** Converts text to numbers for the computer
+- **Sampling:** Makes smaller dataset (20,000 houses) for speed
+- **Validation:** Checks data quality
