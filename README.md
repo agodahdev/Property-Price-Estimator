@@ -199,3 +199,29 @@ The project downloads data by itself using Kaggle:
 - **Engineering:** Converts text to numbers for the computer
 - **Sampling:** Makes smaller dataset (20,000 houses) for speed
 - **Validation:** Checks data quality
+
+## How We Built the Smart System
+
+### Preparing the Data
+- **Converting Text:** Changes house types and counties to numbers
+- **Picking Features:** Focuses on important factors (location, type, ownership)
+- **Splitting Data:** Uses 80% for training, 20% for testing
+
+### Why We Chose Random Forest
+**Random Forest chosen because:**
+- Great at handling different types of information
+- Doesn't get confused by complex patterns
+- Can tell us which factors matter most
+- Works well for guessing prices
+- Easy for business people to understand
+
+### Making It Better
+We tested different settings to make it work best:
+- **Number of trees:** Tried 10, 50, 100, 200 trees
+- **Tree depth:** Tested different maximum depths
+- **Splitting rules:** Various ways to split data
+- **Leaf size:** Different minimum sizes
+- **Feature selection:** Different ways to pick factors
+- **Consistency:** Set random seed for same results every time
+
+**Final Setup:** 50 trees with other settings optimized for best performance.
