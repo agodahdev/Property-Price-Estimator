@@ -92,3 +92,44 @@ Uses "Random Forest" - a smart method that looks a lot of different factors to m
 - **Training Error:** £35,000 - £45,000 (acceptable mistakes)
 - **Test Error:** £40,000 - £55,000 (reasonable for new data)
 
+## The Website
+
+### Page 1: Prtoject Summary
+**What's on it:** Overview of everything, main goals, data summary
+**Why it's useful:** Gives you the big picture of what this project does
+**What you can do:** See key numbers and statistics
+
+### Page 2: Property Analysis
+**What's on it:** Charts and graphs showing house prices patterns
+**Why it's useful:** Answers Goal 1 - gives price predictions
+**What you can see:** Different types of charts showing price trends
+**What you can do:** Look at interactive charts
+
+### Page 3: Price Predicator
+**What's on it:** Forms where you enter house details to get a price guess
+**Why it's useful:** Answers Goal 2 - gives price predictions
+**What you can see:** Pick house features and get instant price estimates
+**Special features:** Show how confident we are in the prediction
+
+### Page 4: Project Questions
+**What's on it:** Results of testing our three big questions
+**Why it's useful:** Proves our assumptions with real data
+**What you can see:** Charts and evidence for each question
+**What you can do:** See which questions were right or wrong
+
+### Page 5: System Performance
+**What's on it:** How well our smart system works
+**Why it's useful:** Shows you cvan trust Goal 2 predictions
+**What you can see:** Accuracy charts and error measurements
+**What you can do:** Check how reliable the predictions are
+
+
+## What We Built This With
+
+**Main Language:** Python
+**Website Framework:** Streamlit
+**Data work:** Pandas, Numpy
+**Smart Learning:** Scikit-learn (Random Forest)
+**Charts:** Plotly, Matplotlib, Seaborn
+**Development:** Jupytern Notebooks
+**Data Storage:** Kaggle API
