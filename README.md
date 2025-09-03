@@ -94,42 +94,90 @@ Uses "Random Forest" - a smart method that looks a lot of different factors to m
 
 ## The Website
 
-### Page 1: Prtoject Summary
+### Page 1: Project Summary
 **What's on it:** Overview of everything, main goals, data summary
+
 **Why it's useful:** Gives you the big picture of what this project does
+
 **What you can do:** See key numbers and statistics
 
 ### Page 2: Property Analysis
 **What's on it:** Charts and graphs showing house prices patterns
+
 **Why it's useful:** Answers Goal 1 - gives price predictions
+
 **What you can see:** Different types of charts showing price trends
+
 **What you can do:** Look at interactive charts
 
 ### Page 3: Price Predicator
 **What's on it:** Forms where you enter house details to get a price guess
+
 **Why it's useful:** Answers Goal 2 - gives price predictions
+
 **What you can see:** Pick house features and get instant price estimates
+
 **Special features:** Show how confident we are in the prediction
 
 ### Page 4: Project Questions
 **What's on it:** Results of testing our three big questions
+
 **Why it's useful:** Proves our assumptions with real data
+
 **What you can see:** Charts and evidence for each question
+
 **What you can do:** See which questions were right or wrong
 
 ### Page 5: System Performance
 **What's on it:** How well our smart system works
-**Why it's useful:** Shows you cvan trust Goal 2 predictions
+
+**Why it's useful:** Shows you can trust Goal 2 predictions
+
 **What you can see:** Accuracy charts and error measurements
+
 **What you can do:** Check how reliable the predictions are
-
-
 ## What We Built This With
 
 **Main Language:** Python
-**Website Framework:** Streamlit
+
+**Website Framework:** Streamli
+
 **Data work:** Pandas, Numpy
+
 **Smart Learning:** Scikit-learn (Random Forest)
+
 **Charts:** Plotly, Matplotlib, Seaborn
-**Development:** Jupytern Notebooks
+
+**Development:** Jupyter Notebooks
+
 **Data Storage:** Kaggle API
+
+## How To Set It Up
+
+### What You Need First
+- Python 3.12 or newer
+- Kaggle Account
+
+### Set by Step Setup
+
+1. **Install Everything Needed:**
+pip - install -r requirements.txt
+
+2. **Set up data download:**
+- Make free account at kaggle.com
+- Go to Settings > API > Create New API Token
+- Write down your username and key 
+
+3. **Get the data:**
+
+juypter notebook:
+
+_Open jupyter_notebooks/01_DataCollection.ipynb_
+
+_Put your Kaggle username and key in Cell 1_
+
+_Run all the cells to download data_
+
+4. **Start the app:**
+streamlit run app.py
+
