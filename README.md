@@ -47,3 +47,17 @@ Build a smart sytem that can guess how much should cost, helping estate agents a
 **How we test it:** Compare average London house prices with everywhere else.
 
 **What counts as success:** London houses cost at least 50% more.
+
+### Question 2: Are Detached Houses the Most Expensive?
+**What we think:** Detached houses cost the most money compared to other property types.
+
+**How we test it:** Look at average prices for all house types (detached, semi-detached, terraced, flat)
+
+**What counts as success:** Detached houses are the most expensive type.
+
+### Question 3: Do New Houses Cost More?
+**What we think:** Newly built houses sell for more money than older houses.
+
+**How we test it:** Compare prices of new vs old houses.
+
+**What counts as success:** New houses have higher average prices.
