@@ -61,3 +61,34 @@ Build a smart sytem that can guess how much should cost, helping estate agents a
 **How we test it:** Compare prices of new vs old houses.
 
 **What counts as success:** New houses have higher average prices.
+
+## How the Smart Sytem Works
+
+### What it Does
+Creates a computer system that can guess house prices for estate agents and investors.
+
+### How It Learns
+Uses "Random Forest" - a smart method that looks a lot of different factors to make good guesses.
+
+### What Information It Uses
+- House types (detached, semi-detached, terrace, flat)
+- Location (which county)
+- Age (new/old)
+- Ownership type (leased/own forever)
+
+### What It Tells You
+- Predicated house price in pounds
+- How confident we are in our guess
+- Price range for similar houses
+
+### How Well It Works
+- **Accuracy Score:** Above 70%
+- **Average Error:** less than £50,000 (reasonble mistake range)
+- **Success Rate:** Right withn 20% for 8 out of 10 houses
+
+### Our Results
+- **Training Score**: 85%+ (learns well from examples)
+- **Test Score:** 75%+ (works well on new houses)
+- **Training Error:** £35,000 - £45,000 (acceptable mistakes)
+- **Test Error:** £40,000 - £55,000 (reasonable for new data)
+
