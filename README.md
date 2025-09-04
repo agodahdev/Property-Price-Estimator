@@ -286,4 +286,34 @@ New vs old property pricing varies by location and market conditions in the hist
 - Made technical codes user-friendly
 - Added confidence indicators for predictions
 
+## What We Learned From Our Mistakes
 
+### When Our First Ideas Were Wrong
+- **What we thought:** London houses would cost the most money
+- **What we actually found:** Surrey and Buckinghamshire houses cost more
+- **How we fixed it:** Changed our idea to include wealthy areas around London
+- **Why this is good:** Shows we follow the data instead of sticking to wrong ideas
+
+### How We Made Our Analysis Better
+- **Better filtering:** Only counted counties with lots of houses (100+) so our averages make sense
+- **Smarter math:** Used middle prices instead of averages so super-expensive houses don't mess up our results
+- **Being honest:** Told people exactly which data we threw out and why
+- **Real world explanation:** Explained why Surrey being expensive actually makes sense
+
+### Problems We Fixed Along the Way
+- **Speed problems:** App took 10 minutes to load, now takes 10 seconds by using smaller data
+- **Getting data automatically:** Made the computer download UK house data by itself
+- **Making sure results are right:** Used multiple ways to check our findings
+- **Making it easy to understand:** Added simple explanations for UK house terms so anyone can use it
+
+## Limitations and Things to Consider
+
+### Data Limitations
+- Sample might not capture everything
+- Historical data (1995-2017) may not reflect current market
+- Local areas might need additional local expertise
+
+### Model Limitations
+- Predictions based on limited information from historical period
+- Accuracy varies by house type and location
+- Should add to, not replace, professional advice
