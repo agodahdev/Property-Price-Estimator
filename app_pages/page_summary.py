@@ -15,6 +15,7 @@ def page_summary_body():
     st.write("#### Business Requirements")
     st.success("""
     **BR1:** Analyze UK property characteristics and price patterns
+
     **BR2:** Build ML model to predict property values
     """
     )
@@ -36,3 +37,24 @@ def page_summary_body():
         
     else:
         st.warning("Dataset not loaded yet")
+
+    # Updated project hyptheses section
+    st.write("### Project Hypotheses")
+    st.info("""
+    **H1: Home Counties Command Premium Prices**
+    *Revised from London-only hypothesis based on data findings*
+    Wealthy areas around London (Surrey, Buckinghamshire, Hertfordshire) command premium prices due to London accessibility with larger properties.
+
+    **H2: Detached Houses Are Most Expensive**
+    Detached properties cost more than other property types due to space and privacy.
+
+    **H3: New Properties Command Higher Prices**
+    Newly built properties sell for premium prices compared to existing properties.
+    """)
+
+    # Add data limitation notice
+    st.warning("""
+    **Data Limitation:**
+    - Analysis based on historical UK property data (1995-2017).
+    - Results reflect established market patterns rather than current conditions.
+    """)
