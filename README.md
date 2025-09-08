@@ -1,23 +1,29 @@
 # UK Property Price Predictor
 
 ## What This Project Does
-This project helps people understand UK house prices smart computer analysis. It's designed for estate agents, property investors,
-and anyone looking to buy a house who wants to make better decisions based on real data.
+This project uses machine learning to predict UK house prices. I built it to help people understand what affects property prices and to practice my data science skills.
 
-**Main Goals:**
-- Look at UK house price patterns
-- Build a computer system that can predict house prices
-- Give useful advice for property decisions
-- Make it easy for use for regular people
+**Who It's For:**
+- Anyone curious about UK house prices
+- People learning about data science
+- Estate agents who want rough price estimates
 
-## Business Goals
+**What It Does:**
+- Shows UK house price patterns
+- Predicts prices based on property features
+- Explains what makes houses expensive
 
-**Goal 1 - Analyze the Markey:**
-Study how different things about houses (where they are, what type, how old) affect price across the UK to spot trends and
-opportunities.
+## Business Requirements
 
-**Goal 2 - Predict Prices:**
-Build a smart sytem that can guess how much should cost, helping estate agents and buyers make better choices
+### Requirement 1: Understand Price Patterns
+- Show which areas are most expensive
+- Compare different property types
+- See if new houses cost more than old ones
+
+### Requirement 2: Predict House Prices
+- Build a machine learning model
+- Predict prices from property features
+- Show how confident the prediction is
 
 ## The Data We Use
 
