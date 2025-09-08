@@ -1,0 +1,10 @@
+{
+    "model_type": "Random Forest (Optimized)",
+    "train_r2": 0.27090757882695404,
+    "test_r2": 0.22331060276745796,
+    "train_mae": 75285.62643731412,
+    "test_mae": 78521.10286102183,
+    "train_rmse": 112278.36149618021,
+    "test_rmse": 117690.17164680707,
+    "meets_requirements": false
+}
