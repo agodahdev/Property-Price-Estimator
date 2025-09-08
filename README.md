@@ -47,8 +47,6 @@ This project uses machine learning to predict UK house prices. I built it to hel
 
 ## Project Hypotheses and Validation
 
-## Project Hypotheses and Validation
-
 ### Hypothesis 1: Location Affects Price
 **Initial Thought:** London would be most expensive  
 **What We Found:** Surrey and Buckinghamshire are actually most expensive  
@@ -114,29 +112,19 @@ The app has 5 pages:
 - Shows how well model works
 - Actual vs predicted prices chart
 - Explains limitations
-## What We Built This With
 
-**Main Language:** Python
+# How to Install and Run
 
-**Website Framework:** Streamli
+### Requirements
+- Python 3.8 or higher
+- Internet connection
+- Kaggle Account 
 
-**Data work:** Pandas, Numpy
+### Steps
 
-**Smart Learning:** Scikit-learn (Random Forest)
-
-**Charts:** Plotly, Matplotlib, Seaborn
-
-**Development:** Jupyter Notebooks
-
-**Data Storage:** Kaggle API
-
-## How To Set It Up
-
-### What You Need First
-- Python 3.12 or newer
-- Kaggle Account
-
-### Set by Step Setup
+1. **Clone the project:**
+git clone [your-repo-url]
+cd property-price-predictor
 
 1. **Install Everything Needed:**
 pip - install -r requirements.txt
@@ -159,12 +147,25 @@ _Run all the cells to download data_
 4. **Start the app:**
 streamlit run app.py
 
+## Technologies Used
+
+### Main Tools
+- **Python 3.8** - Programming language
+- **Streamlit** - Web app framework
+- **Pandas** - Data handling
+- **Scikit-learn** - Machine learning
+- **Plotly** - Interactive charts
+
+### Libraries
+- numpy - Math operations
+- matplotlib/seaborn - Charts
+- pickle - Save models
+
 ## How We Get and Process Data:
 
 ### Automatic Data Sytem
 The project downloads data by itself using Kaggle:
 
-1.**Download**: Gets UK house price data automatically
 1. **Download:** Gets UK house price data automatically
 2. **Extract:** Unzips files and loads data
 3. **Clean:** Fixes any problems with the data
