@@ -47,105 +47,73 @@ This project uses machine learning to predict UK house prices. I built it to hel
 
 ## Project Hypotheses and Validation
 
-### Hypothesis 1: London Has Highest Prices
-**Initial Thought:** London would be most expensive  
-**What We Found:** Actually Surrey and Buckinghamshire are most expensive  
-**Result:** REVISED - wealthy areas around London cost more
+## Project Hypotheses and Validation
 
-### Hypothesis 2: Property Type Affects Price
-**Thought:** Detached > Semi > Terraced > Flat  
-**What We Found:** Correct! Detached houses cost 40-60% more  
+### Hypothesis 1: Location Affects Price
+**Initial Thought:** London would be most expensive  
+**What We Found:** Surrey and Buckinghamshire are actually most expensive  
+**Result:** REVISED - wealthy Home Counties cost more than London
+
+### Hypothesis 2: Property Type Affects Price  
+**Thought:** Detached houses cost more than other types  
+**What We Found:** Yes! Detached > Semi > Terraced > Flat  
 **Result:** VALIDATED
 
 ### Hypothesis 3: New Houses Cost More
-**Thought:** New builds are more expensive  
-**What We Found:** Mixed results, depends on location  
+**Thought:** Newly built houses are more expensive  
+**What We Found:** Depends on location and market conditions  
 **Result:** PARTIALLY VALIDATED
 
-### Hypothesis 4: Freehold Costs More Than Leasehold
-**Thought:** Owning forever costs more than leasing  
-**What We Found:** Yes, freehold properties cost more  
-**Result:** VALIDATED
+## Machine Learning Business Case
 
-### Hypothesis 5: Counties Near London Cost More
-**Thought:** Being close to London increases price  
-**What We Found:** True for Home Counties  
-**Result:** VALIDATED
+### The Problem
+Estate agents and buyers need quick price estimates but professional valuations are expensive and slow.
 
-## How the Smart Sytem Works
+### The Solution
+A machine learning model that predicts prices instantly based on:
+- Property type
+- Location (county)
+- New or old
+- Freehold or leasehold
 
-### What it Does
-Creates a computer system that can guess house prices for estate agents and investors.
+### Success Metrics
+- **R² Score:** Above 0.2 (explains 20%+ of price variation)
+- **MAE:** Under £100,000 (average error)
+- **Business Value:** Provides rough estimates for initial discussions
 
-### How It Learns
-Uses "Random Forest" - a smart method that looks a lot of different factors to make good guesses.
+### Model Results
+- **R² Score:** 0.22 (explains 22% of prices)
+- **MAE:** £78,000 (average error)
+- **Conclusion:** Model provides basic estimates but needs more data for accuracy
 
-### What Information It Uses
-- House types (detached, semi-detached, terrace, flat)
-- Location (which county)
-- Age (new/old)
-- Ownership type (leased/own forever)
+## Dashboard Design
 
-### What It Tells You
-- Predicated house price in pounds
-- How confident we are in our guess
-- Price range for similar houses
-
-### How Well It Works
-- **Accuracy Score:** Above 70%
-- **Average Error:** less than £50,000 (reasonble mistake range)
-- **Success Rate:** Right withn 20% for 8 out of 10 houses
-
-### Our Results
-- **Training Score**: 85%+ (learns well from examples)
-- **Test Score:** 75%+ (works well on new houses)
-- **Training Error:** £35,000 - £45,000 (acceptable mistakes)
-- **Test Error:** £40,000 - £55,000 (reasonable for new data)
-
-## The Website
+The app has 5 pages:
 
 ### Page 1: Project Summary
-**What's on it:** Overview of everything, main goals, data summary
+- Overview of the project
+- Links to all other pages
+- Quick statistics
 
-**Why it's useful:** Gives you the big picture of what this project does
+### Page 2: House Price Study
+- Charts showing price patterns
+- County comparison map
+- Property type analysis
 
-**What you can do:** See key numbers and statistics
+### Page 3: Project Hypotheses
+- Tests each hypothesis with data
+- Shows charts proving or disproving ideas
+- Explains what we learned
 
-### Page 2: Property Analysis
-**What's on it:** Charts and graphs showing house prices patterns
+### Page 4: Predict House Price
+- Enter property details
+- Get instant price prediction
+- See confidence level
 
-**Why it's useful:** Answers Goal 1 - gives price predictions
-
-**What you can see:** Different types of charts showing price trends
-
-**What you can do:** Look at interactive charts
-
-### Page 3: Price Predicator
-**What's on it:** Forms where you enter house details to get a price guess
-
-**Why it's useful:** Answers Goal 2 - gives price predictions
-
-**What you can see:** Pick house features and get instant price estimates
-
-**Special features:** Show how confident we are in the prediction
-
-### Page 4: Project Questions
-**What's on it:** Results of testing our three big questions
-
-**Why it's useful:** Proves our assumptions with real data
-
-**What you can see:** Charts and evidence for each question
-
-**What you can do:** See which questions were right or wrong
-
-### Page 5: System Performance
-**What's on it:** How well our smart system works
-
-**Why it's useful:** Shows you can trust Goal 2 predictions
-
-**What you can see:** Accuracy charts and error measurements
-
-**What you can do:** Check how reliable the predictions are
+### Page 5: ML Performance
+- Shows how well model works
+- Actual vs predicted prices chart
+- Explains limitations
 ## What We Built This With
 
 **Main Language:** Python
