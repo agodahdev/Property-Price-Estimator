@@ -161,136 +161,48 @@ streamlit run app.py
 - matplotlib/seaborn - Charts
 - pickle - Save models
 
-## How We Get and Process Data:
+## Testing
 
-### Automatic Data Sytem
-The project downloads data by itself using Kaggle:
+### Manual Testing
+- Tested all pages load without errors
+- Checked all charts display correctly
+- Verified predictions work with different inputs
+- Tested on different browsers (Chrome, Firefox, Safari)
 
-1. **Download:** Gets UK house price data automatically
-2. **Extract:** Unzips files and loads data
-3. **Clean:** Fixes any problems with the data
-4. **Make Smaller:** Creates faster version for the app
-5. **Save:** Puts data in organized folders
+### Data Testing
+- Checked for missing values (none found)
+- Removed outliers (prices below £50k and above £1M)
+- Verified all features created correctly
 
-### Data Processing Steps
-- **Collection:** Downloads from official government source
-- **Cleaning:** Fixes missing information
-- **Engineering:** Converts text to numbers for the computer
-- **Sampling:** Makes smaller dataset (20,000 houses) for speed
-- **Validation:** Checks data quality
+### Model Testing
+- Compared 4 different models (Linear Regression, Decision Tree, KNN, Random Forest)
+- Used cross-validation to check stability
+- Tested predictions on unseen data
 
-## How We Built the Smart System
+# Bugs Fixed
 
-### Preparing the Data
-- **Converting Text:** Changes house types and counties to numbers
-- **Picking Features:** Focuses on important factors (location, type, ownership)
-- **Splitting Data:** Uses 80% for training, 20% for testing
+### Bug 1: Negative R² Score
+- **Problem:** Model had R² of -0.448 (worse than guessing average)
+- **Cause:** Missing features and outliers in data
+- **Fix:** Removed outliers and added Duration feature
+- **Result:** R² improved to 0.22
 
-### Why We Chose Random Forest
-**Random Forest chosen because:**
-- Great at handling different types of information
-- Doesn't get confused by complex patterns
-- Can tell us which factors matter most
-- Works well for guessing prices
-- Easy for business people to understand
+### Bug 2: Plotly Error
+- **Problem:** `update_yaxis` not working
+- **Cause:** Wrong Plotly method
+- **Fix:** Changed to `update_layout`
 
-### Making It Better
-We tested different settings to make it work best:
-- **Number of trees:** Tried 10, 50, 100, 200 trees
-- **Tree depth:** Tested different maximum depths
-- **Splitting rules:** Various ways to split data
-- **Leaf size:** Different minimum sizes
-- **Feature selection:** Different ways to pick factors
-- **Consistency:** Set random seed for same results every time
+### Bug 3: Slow Loading
+- **Problem:** App took 10+ minutes to load
+- **Cause:** Loading 2 million records
+- **Fix:** Created smaller dataset (20,000 records)
 
-**Final Setup:** 50 trees with other settings optimized for best performance.
+### Bug 4: Missing Features
+- **Problem:** KeyError for 'Type_Age_Interaction'
+- **Cause:** Trying to use feature before creating it
+- **Fix:** Created features in correct order
 
-## What We Found Out
-
-### Our Three Questions - The Results
-
-**Question 1: VALIDATED - HOME COUNTIES PREMIUM**
-Home Counties (Surrey, Buckinghamshire, Hertfordshire) are 50-80% more expensive than other UK regions. These wealthy areas around London offer larger properties with London accessibility.
-
-**Question 2: CORRECT** 
-Detached houses are definitely the most expensive, costing 40-60% more than terraced houses.
-
-**Question 3: DATA-DEPENDENT**
-New vs old property pricing varies by location and market conditions in the historical data (1995-2017).
-
-## Key Data Learning
-**Important Discovery:** Our analysis revealed that the most expensive areas aren't always where we initially expected. The data showed Home Counties commanding premium prices, demonstrating that wealth and high property values extend beyond city boundaries into surrounding affluent areas.
-
-### Business Value
-- **Estate Agents:** Give clients data-backed price estimates based on real market patterns
-- **Investors:** Find good deals and understand regional price variations   
-- **Buyers:** Make smarter decisions with evidence-based market insights
-- **Everyone:** Better understanding of UK property market complexity beyond simple assumptions
-
-## Important Data Limitations
-
-**Historical Data Period:** This analysis uses UK property transaction data from 1995-2017. Results reflect established market patterns rather than current market conditions.
-
-**Why This Still Matters:**
-- Historical patterns reveal long-term market dynamics
-- Fundamental relationships between location, property type, and pricing remain relevant
-- Provides baseline understanding for market analysis
-- Demonstrates data-driven analytical approach over assumptions
-
-**Business Applications:** While not current, these insights help understand established market relationships and regional variations that inform modern property investment and pricing strategies.
-
-## Problems We Solved
-
-### Technical Challenges Fixed
-
-**Speed Problems:**
-- Started with 2 million+ house records that took 10 minutes to load
-- Fixed by using smaller sample and smart caching
-- Now loads in under 10 seconds
-
-**Code Errors:**
-- Fixed many spelling mistakes in code
-- Corrected Python syntax problems
-- Fixed file path mistakes
-
-**Data Problems:**
-- Made automatic download from Kaggle work
-- Added error handling for missing files
-- Created backup plans when things go wrong
-
-**User Experience:**
-- Added clear explanations for UK house terms
-- Made technical codes user-friendly
-- Added confidence indicators for predictions
-
-## What We Learned From Our Mistakes
-
-### When Our First Ideas Were Wrong
-- **What we thought:** London houses would cost the most money
-- **What we actually found:** Surrey and Buckinghamshire houses cost more
-- **How we fixed it:** Changed our idea to include wealthy areas around London
-- **Why this is good:** Shows we follow the data instead of sticking to wrong ideas
-
-### How We Made Our Analysis Better
-- **Better filtering:** Only counted counties with lots of houses (100+) so our averages make sense
-- **Smarter math:** Used middle prices instead of averages so super-expensive houses don't mess up our results
-- **Being honest:** Told people exactly which data we threw out and why
-- **Real world explanation:** Explained why Surrey being expensive actually makes sense
-
-### Problems We Fixed Along the Way
-- **Speed problems:** App took 10 minutes to load, now takes 10 seconds by using smaller data
-- **Getting data automatically:** Made the computer download UK house data by itself
-- **Making sure results are right:** Used multiple ways to check our findings
-- **Making it easy to understand:** Added simple explanations for UK house terms so anyone can use it
-
-## Limitations and Things to Consider
-
-### Data Limitations
-- Sample might not capture everything
-- Historical data (1995-2017) may not reflect current market
-- Local areas might need additional local expertise
-
-### Model Limitations
-- Predictions based on limited information from historical period
-- Accuracy varies by house type and location
-- Should add to, not replace, professional advice
+### Known Issues
+- Model accuracy limited (R² = 0.22) due to missing data
+- Predictions have high error (MAE = £78k)
+- Need more features for better accuracy
