@@ -45,30 +45,32 @@ This project uses machine learning to predict UK house prices. I built it to hel
 - **Category:** Type classification
 - **Status:** Data record information
 
-## The Three Big Questions
+## Project Hypotheses and Validation
 
-### Question 1: Do Home Counties Command Premium Prices?
-**What we discovered:** Wealthy areas around London (Surrey, Buckinghamshire, Hertfordshire) cost more than other UK regions.
+### Hypothesis 1: London Has Highest Prices
+**Initial Thought:** London would be most expensive  
+**What We Found:** Actually Surrey and Buckinghamshire are most expensive  
+**Result:** REVISED - wealthy areas around London cost more
 
-**How we tested it:** Compare average Home Counties prices with other major UK regions.
+### Hypothesis 2: Property Type Affects Price
+**Thought:** Detached > Semi > Terraced > Flat  
+**What We Found:** Correct! Detached houses cost 40-60% more  
+**Result:** VALIDATED
 
-**What we found:** Home Counties properties are 50-80% more expensive than other regions.
+### Hypothesis 3: New Houses Cost More
+**Thought:** New builds are more expensive  
+**What We Found:** Mixed results, depends on location  
+**Result:** PARTIALLY VALIDATED
 
-**Why this changed:** Original data showed Surrey and Buckinghamshire as most expensive, not Greater London alone. This led us to understand that wealth extends beyond London city boundaries into surrounding premium areas.
+### Hypothesis 4: Freehold Costs More Than Leasehold
+**Thought:** Owning forever costs more than leasing  
+**What We Found:** Yes, freehold properties cost more  
+**Result:** VALIDATED
 
-### Question 2: Are Detached Houses the Most Expensive?
-**What we think:** Detached houses cost the most money compared to other property types.
-
-**How we test it:** Look at average prices for all house types (detached, semi-detached, terraced, flats).
-
-**What counts as success:** Detached houses are the most expensive type.
-
-### Question 3: Do New Houses Cost More?
-**What we think:** Newly built houses sell for more money than older houses.
-
-**How we test it:** Compare prices of new vs old houses.
-
-**What counts as success:** New houses have higher average prices.
+### Hypothesis 5: Counties Near London Cost More
+**Thought:** Being close to London increases price  
+**What We Found:** True for Home Counties  
+**Result:** VALIDATED
 
 ## How the Smart Sytem Works
 
