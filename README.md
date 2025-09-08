@@ -206,3 +206,78 @@ streamlit run app.py
 - Model accuracy limited (R² = 0.22) due to missing data
 - Predictions have high error (MAE = £78k)
 - Need more features for better accuracy
+
+## Project Outcomes
+
+### What Worked
+- Successfully predicted prices with 22% accuracy
+- Identified key price factors
+- Created working web application
+- Validated 4 out of 5 hypotheses
+
+### Limitations
+- Missing important data (house size, exact location)
+- Historical data (1995-2017) not current
+- Model accuracy limited without more features
+
+### Future Improvements
+- Get property size data
+- Add postcode-level location
+- Update with recent sales data
+- Try more advanced models
+
+## Credits
+
+### Data Source
+- UK Land Registry - Official government property data
+- Kaggle API for data access
+
+### Learning Resources That Helped
+
+#### Machine Learning Concepts
+- **StatQuest with Josh Starmer** - Random Forest Explained
+  - https://www.youtube.com/watch?v=J4Wdy0Wc_xQ
+  - Helped understand how Random Forest works
+  
+
+#### Python and Pandas
+- **Corey Schafer Python Tutorials** - Pandas DataFrame basics
+  - https://www.youtube.com/watch?v=ZyhVh-qRZPA
+  - Helped with data manipulation
+
+#### Statistics and Math
+- **Khan Academy** - Statistics fundamentals
+  - Mean, median, standard deviation explained
+  - https://www.khanacademy.org/math/statistics-probability
+  
+- **3Blue1Brown** - Linear Regression visual explanation
+  - https://www.youtube.com/watch?v=PaFPbb66DxQ
+  - Visual understanding of regression
+
+#### Streamlit Development
+- **Streamlit Documentation** - Official tutorials
+  - https://docs.streamlit.io
+  
+- **Data Professor YouTube** - Streamlit app tutorials
+  - https://www.youtube.com/dataprofessor
+  - Helped build the web interface
+
+### Code Institute Resources
+- Course materials and walkthrough projects
+- Mentor guidance and support
+- Slack community for troubleshooting
+
+## Future Development
+
+### If I Had More Time
+- Add more features like property size and exact postcode
+- Try advanced models like XGBoost or Neural Networks
+- Create an API for other developers to use
+- Add user accounts to save predictions
+- Include recent 2020+ data
+
+### What I Learned
+- Data quality matters more than complex models
+- Missing features limit accuracy
+- Real projects need lots of debugging
+- Simple explanations help users understand
